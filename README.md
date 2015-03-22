@@ -18,7 +18,8 @@ You can also use the Binary distribution in the Binary folder.
 
 ```s
 library(P300PSYCHOPHYSICAL) 
-Analyseptcsv("result.csv")
+data(result)
+Analyseptcsv(result)
 ```
 You can also export your psychophysical result in a CSV file and use the Analyseptcsv function  to get analyse your data.
 ```s

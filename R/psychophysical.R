@@ -1,8 +1,8 @@
 #P300 psychophysical test analyser       By Aness BELHAOUARI
 
-Analyseptcsv <- function(file)
+Analyseptcsv <- function(result)
 {
-  result <- read.csv(file, header = TRUE, sep = ",") 
+#  result <- read.csv(file, header = TRUE, sep = ",") 
   
   data <- result[which(as.numeric(result[,4]) == 1),]
   data <- data[which(as.numeric(data[,3]) > 0),]

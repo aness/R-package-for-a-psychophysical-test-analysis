@@ -1,0 +1,16 @@
+{
+    "contents" : "#P300 psychophysical test analyser       By Aness BELHAOUARI\n\nAnalyseptcsv <- function(result)\n{\n#  result <- read.csv(file, header = TRUE, sep = \",\") \n  \n  data <- result[which(as.numeric(result[,4]) == 1),]\n  data <- data[which(as.numeric(data[,3]) > 0),]\n  (data1 <- data[which(as.numeric(data[,2]) == as.numeric(data[,3])),])\n  (data2 <- data[which(as.numeric(data[,2]) != as.numeric(data[,3])),])\n  miss <- result[which(as.numeric(result[,4]) == 0),]\n  miss <- miss[which(as.numeric(miss[,2]) == as.numeric(miss[,3])),]\n  \n  cm <- matrix(data = NA, nrow = 5, ncol = 7, byrow = FALSE,dimnames = NULL)\n  i <- 0\n  j <- 0\n  \n  for (i in 1:5)\n    for (j in 1:6)\n      cm[i,j] <- 0\n  \n  \n  for (i in 1:nrow(data1))\n  {\n    val <- data1[i,3];\n    cm[val,val] <- cm[val,val]+1\n  }\n  \n  for (i in 1:nrow(data2))\n  {\n    s <- data2[i,2]\n    t <- data2[i,3]\n    cm[t,s] <- cm[t,s]+1\n  }\n  \n  for (i in 1:nrow(miss))\n  {\n    t <- miss[i,3]\n    cm[t,6] <- cm[t,6]+1 \n  }\n  \n  # Adding a column and normalizing results\n  # in lines instructed targets\n  # in columns target response\n  cm1 <- cm\n  for (i in 1:5)\n  { \n    cm[i,7] <- sum(cm[i,1:6])\n    cm1[i,7] <- sum(cm1[i,1:6])\n    cm1[i,1:7] <- cm1[i,1:7]/cm1[i,7]   \n  }\n  \n  # User response time gathering data for a boxplot\n  \n  rt <- matrix(data = NA, nrow = 5, ncol = 3, byrow = FALSE,dimnames = NULL)\n  for (i in 1:5)\n    for (j in 1:3)\n      rt[i,j] <- 0\n  \n  for (i in 1:5)\n  { \n    rt[i,1] <- min(data[which(as.numeric(data[,3]) == i),5])\n    rt[i,2] <- mean(data[which(as.numeric(data[,3]) == i),5])\n    rt[i,3] <- max(data[which(as.numeric(data[,3]) == i),5]) \n  }\n  \n  # Generating a box plot\n  boxplot(t(rt))\n  cm1  \n\n\n}",
+    "created" : 1427016477023.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "234633965",
+    "id" : "EACAF142",
+    "lastKnownWriteTime" : 1427016583,
+    "path" : "~/Embarcadero/Studio/Projects/Dynamic stim Aness/R_package/P300_psychophysical_analyser/visual-P300-based-BCI-psychophysical-analysis/R/psychophysical.R",
+    "project_path" : "R/psychophysical.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
