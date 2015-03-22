@@ -8,7 +8,9 @@ Please find attached a psychophysical test result sample in the file : result.cs
 You can install the latest version from Github
 
 install.packages("devtools")
+
 library(devtools)
+
 install_github("aness/visual-P300-based-BCI-psychophysical-analysis") 
 
 You can also use the Binary distribution in the Binary folder.
