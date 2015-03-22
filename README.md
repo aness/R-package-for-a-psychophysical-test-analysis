@@ -21,10 +21,12 @@ library(P300PSYCHOPHYSICAL)
 data(result)
 Analyseptcsv(result)
 ```
-You can also export your psychophysical result in a CSV file and use the Analyseptcsv function  to get analyse your data.
+You can also export your psychophysical result in a CSV file. Using this instruction you will generate a dataset from your current csv file.  
 ```s
-Analyseptcsv("filename.csv")
+result <- read.csv(filename, header = TRUE, sep = ",")
+Analyseptcsv("result")
 ```
+The file format must follow this template  https://github.com/aness/visual-P300-based-BCI-psychophysical-analysis/blob/master/result.csv
 
 ## License
 
