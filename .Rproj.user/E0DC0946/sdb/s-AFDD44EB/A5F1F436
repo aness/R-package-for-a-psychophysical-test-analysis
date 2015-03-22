@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: P300PSYCHOPHYSICAL\nType: Package\nTitle: P300 based BCI psychophysical test data analyser\nVersion: 1.0\nDate: 2015-03-21\nAuthor: Aness BELHAOUARI\nMaintainer: <aness.oran@gmail.com>\nDescription: This package reads a specific CSV file containing psychophysical test data. The following provides functions to generate a confusion matrix and a user response time plot. Using these results you can tell if your BCI experimental envirement and stimulis are well set or not. If not you may have to redo the experimental setting again. Results are useful when working with non classical stimuli.\nLicense: GNU\n",
+    "created" : 1427009725234.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3793624085",
+    "id" : "A5F1F436",
+    "lastKnownWriteTime" : 1426884438,
+    "path" : "~/Embarcadero/Studio/Projects/Dynamic stim Aness/R_package/P300_psychophysical_analyser/visual-P300-based-BCI-psychophysical-analysis/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

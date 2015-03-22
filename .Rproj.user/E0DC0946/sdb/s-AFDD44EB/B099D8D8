@@ -1,0 +1,16 @@
+{
+    "contents" : "\\name{Analyseptcsv}\n\\alias{Analyseptcsv}\n%- Also NEED an '\\alias' for EACH other topic documented here.\n\\title{Analysing the BCI visual P300 psychophysical data and processing results\n%%  ~~function to do ... ~~\n}\n\\description{\n%%  ~~ A concise (1-5 lines) description of what the function does. ~~\nanalyse(file) returns a confusion matrix where all the lines are the instructed targets and the columns represent the visual stimuli. \nThe function also returns a response time plot\n}\n\\usage{\nanalyse(file)\n}\n%- maybe also 'usage' for other objects documented here.\n\\arguments{\n  \\item{file}{\n%%     ~~Describe \\code{file} here~~\nfile is the csv file containing the experimental results. The results are organized in 4 columns : the stimulus, the target, the user key response and the response time. \n}\n}\n\\details{\n%%  ~~ If necessary, more details than the description above ~~\nThis work is useful when creating new brain computer interfaces and before doing the EEG experiments. The function does return a confusion matrix where the contradiagonal line should contain all information. If not the experimental setup may be wrong. The user response must be all \n}\n\\value{\n\n\n%%  ~Describe the value returned\n%%  If it is a LIST, use\n \\item{cm }{analyse returns a confusion matrix 'cm' where result are of type float}\n  \\item{rt }{analyse returns a box plot for the user response time where result are of type float}\n%%  \\item{comp2 }{Description of 'comp2'}\n%% ...\n}\n\\references{\n%% ~put references to the literature/web site here ~\n}\n\\author{\n%%  ~~who you are~~\n}\n\\note{\n%%  ~~further notes~~\n}\n\n%% ~Make other sections like Warning with \\section{Warning }{....} ~\n\n\\seealso{\n%% ~~objects to See Also as \\code{\\link{help}}, ~~~\n}\n\\examples{\n%%##---- Should be DIRECTLY executable !! ----\n%%##-- ==>  Define data, use random,\n%%##--\tor do  help(data=index)  for the standard data sets.\n\n%%## The function is currently defined as\nAnalyseptcsv (\"result.csv\") \n%%{\n%% }\n}\n% Add one or more standard keywords, see file 'KEYWORDS' in the\n% R documentation directory.\n\\keyword{ psychophysical }\n\\keyword{ BCI }\n\\keyword{ P300 }\n\\keyword{ Confusion }\n\\keyword{ matrix }\n\\keyword{ response }\n\\keyword{ time }\n\\keyword{ plot }\n",
+    "created" : 1427009803685.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2083054570",
+    "id" : "B099D8D8",
+    "lastKnownWriteTime" : 1427010040,
+    "path" : "~/Embarcadero/Studio/Projects/Dynamic stim Aness/R_package/P300_psychophysical_analyser/visual-P300-based-BCI-psychophysical-analysis/man/Analyseptcsv.Rd",
+    "project_path" : "man/Analyseptcsv.Rd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_doc"
+}
