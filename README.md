@@ -3,7 +3,7 @@ This package reads a specific CSV file containing psychophysical test data. The 
 
 Please find attached a psychophysical test result sample in the file : result.csv
 
-# Installation
+## Installation
 
 In R Studio you can install the latest version from Github
 
@@ -14,7 +14,7 @@ install_github("aness/visual-P300-based-BCI-psychophysical-analysis")
 ```
 You can also use the Binary distribution in the Binary folder.
 
-#Using this package
+##Using this package
 
 ```s
 library(P300PSYCHOPHYSICAL) 
