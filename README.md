@@ -1,5 +1,5 @@
 # Psychophysical analysis R package
-This package reads a specific CSV file containing psychophysical test data. The following provides functions to generate a confusion matrix and a user response time plot. Using these results you can tell if your BCI experimental envirement and stimulis are well set or not. If not you may have to redo the experimental setting again. Results are useful when working with non classical stimuli.
+This package reads a specific CSV file containing psychophysical test data. The function Analyseptcsv helps to generate a confusion matrix and a user response time boxplot. These results are useful when creating a BCI to check if your experimental set-up is correctly configured.
 
 Please find attached a psychophysical test result sample in the file : result.csv
 
