@@ -1,7 +1,7 @@
 # Psychophysical analysis R package
 This package can only be used with R. It can be used to calculate a confusion matrix and to plot a response time boxplot. 
 
-These results are useful when creating a BCI to check if your experimental enviroment is correctly set. http://www.tara.tsukuba.ac.jp/~maki/reprint/Tomek/shimizu15aearu35-36.pdf
+These results are useful when creating a BCI to check if your experimental onvironment is correctly set. http://www.tara.tsukuba.ac.jp/~maki/reprint/Tomek/shimizu15aearu35-36.pdf
 
 Please refer also to this dataset containing a psychophysical test result sample. https://github.com/aness/visual-P300-based-BCI-psychophysical-analysis/blob/master/result.csv
 
