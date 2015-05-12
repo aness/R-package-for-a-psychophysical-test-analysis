@@ -5,7 +5,7 @@ Version: 1.0
 Date: 2015-03-21
 Author: Aness BELHAOUARI
 Maintainer: <aness.oran@gmail.com>
-Description: This package reads a specific CSV file containing psychophysical test data. The following provides functions to generate a confusion matrix and a user response time plot. Using these results you can tell if your BCI experimental envirement and stimulis are well set or not. If not you may have to redo the experimental setting again. Results are useful when working with non classical stimuli.
+Description: This package reads a specific CSV file containing psychophysical test data. The following provides functions to generate a confusion matrix and a user response time plot. Using these results you can tell if your experimental onvironment and stimuli are well designed. If not you may have to review the experimental settings again.
 License: GNU
 LazyData: true
 Encoding: UTF-8
