@@ -13,7 +13,7 @@ In R Studio you can install the latest version from Github
 ```s
 install.packages("devtools")
 library(devtools)
-install_github("aness/visual-P300-based-BCI-psychophysical-analysis") 
+install_github("R-package-for-a-psychophysical-test-analysis") 
 ```
 You can also use the Binary distribution in the Binary folder.
 
